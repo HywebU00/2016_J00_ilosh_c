@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant" class="no-js">
+<html lang="">
 
 <head>
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
     <script type="text/javascript" src="js/styleswitcher.js"></script><!-- 切換大、中、小字形-->
 </head>
 
-<body> <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+<body>
     <header id="Header">
         <nav class="navbar navbar-default megamenu" role="navigation">
             <div class="container Topheader">
@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
                     <div class="pull-sm-right pull-md-right pull-lg-right">
                         <ul class="nav navbar-nav Topnav">
-                            <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                            <a href="javascript:;" title="導覽列" class="accesskey" accesskey="U">:::</a>
                             <li><a href="javascript:;">回首頁</a></li>
                             <li><a href="javascript:;">網站導覽</a></li>
                             <li><a href="javascript:;">RSS</a></li>
@@ -92,7 +92,7 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="請輸入關鍵字" accesskey="S">
                                     <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-search"> </span></button>
+                                        <input type="button" name="" alt="查詢" class="btn">
                                     </span> </div>
                                 <div class="AdvSearch"><a href="javascript:;">進階搜尋</a></div>
                                 <div class="HotKeywords"> <a href="javascript:;">基本工資</a> <a href="javascript:;">兼任助理</a> <a href="javascript:;">外勞</a> </div>
@@ -195,139 +195,48 @@
                         <ol class="breadcrumb">
                             <li><a href="#">首頁</a></li>
                             <li><a href="#">新聞公告</a></li>
-                            <li class="active">活動相簿</li>
+                            <li class="active">公佈欄</li>
                         </ol>
-                        <!--sitemap start -->
-                        <section class="sitemap">
-                            <h2>網站導覽</h2>
-                            <p>如果您使用的瀏覽器是IE，快速鍵的使用方式是 [Alt] 加上所定義的字母；如果您用Firefox 瀏覽網頁，快速鍵的使用方式是 [Alt] 加 [Shift] 加上所定義的字母 ：</p>
-                            <p>本網站的快速鍵﹝Accesskey﹞設定如下：</p>
-                            <ul class="accesskeyDefine">
-                                <li>Alt+U：上方主導覽選單區塊。</li>
-                                <li>Alt+C：中央內容區塊。</li>
-                                <li>Alt+S：網站搜尋。</li>
-                                <li>Alt+Z：下方功能區塊。</li>
-                            </ul>
-                            <p>※當本網站項目頁籤無法以滑鼠點選時，您可利用以下鍵盤操作方式瀏覽資料 <br /> ← → or ↑↓：按左右鍵或上下鍵移動標籤順序。 <br /> Home or End→：可直接跳至標籤第一項或者最後一項。 <br /> Tab：停留於該標籤後,可利用Tab鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使← → or↑↓鍵移動項目順序。 <br /> Tab + Shift：按Tab + Shift可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用← → or↑↓鍵移動標籤順序。 </p>
-                            <ul class="cascading">
-                                <li><a href="#">1. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">1. 第一層網頁</a></li>
-                                <li><a href="#">1. 第一層網頁</a></li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
+                        <!--np start -->
+                        <section class="np">
+                            <h2>新聞公告</h2>
+                            <section class="piclist_group">
+                                <div class="piclist">
+                                    <a href="#">
+                                        <div class="images"><img src="images/piclist_01.jpg" alt="">
+                                            <div class="explain"><span>因應疫情協助措施因應疫情協助措施因應疫情協助措施</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="piclist">
+                                    <a href="#">
+                                        <div class="images"><img src="images/piclist_02.jpg" alt="">
+                                            <div class="explain"><span>防疫相關勞動權益</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="piclist">
+                                    <a href="#">
+                                        <div class="images"><img src="images/piclist_03.jpg" alt="">
+                                            <div class="explain"><span>新聞稿\即時新聞澄清</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="piclist">
+                                    <a href="#">
+                                        <div class="images"><img src="images/piclist_04.jpg" alt="">
+                                            <div class="explain"><span>宣導素材</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="piclist">
+                                    <a href="#">
+                                        <div class="images"><img src="images/piclist_05.jpg" alt="">
+                                            <div class="explain"><span>相關連結</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
                             <div class="quickLink">
                                 <ul>
                                     <li><a href="javascript:history.back();" class="back">回上一頁</a>
@@ -336,7 +245,7 @@
                                 </ul>
                             </div>
                         </section>
-                        <!--sitemap end -->
+                        <!--np end -->
                         <!--右欄資訊 end -->
                     </div>
                 </div>
@@ -519,7 +428,7 @@
         </div>
     </footer>
     <!--Footer end -->
-     <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>

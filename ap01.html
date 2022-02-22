@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant" class="no-js">
+<html lang="">
 
 <head>
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
     <script type="text/javascript" src="js/styleswitcher.js"></script><!-- 切換大、中、小字形-->
 </head>
 
-<body> <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+<body>
     <header id="Header">
         <nav class="navbar navbar-default megamenu" role="navigation">
             <div class="container Topheader">
@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
                     <div class="pull-sm-right pull-md-right pull-lg-right">
                         <ul class="nav navbar-nav Topnav">
-                            <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                            <a href="javascript:;" title="導覽列" class="accesskey" accesskey="U">:::</a>
                             <li><a href="javascript:;">回首頁</a></li>
                             <li><a href="javascript:;">網站導覽</a></li>
                             <li><a href="javascript:;">RSS</a></li>
@@ -195,268 +195,218 @@
                         <ol class="breadcrumb">
                             <li><a href="#">首頁</a></li>
                             <li><a href="#">新聞公告</a></li>
-                            <li class="active">活動相簿</li>
+                            <li class="active">公佈欄</li>
                         </ol>
-                        <!--sitemap start -->
-                        <section class="sitemap">
-                            <h2>網站導覽</h2>
-                            <p>如果您使用的瀏覽器是IE，快速鍵的使用方式是 [Alt] 加上所定義的字母；如果您用Firefox 瀏覽網頁，快速鍵的使用方式是 [Alt] 加 [Shift] 加上所定義的字母 ：</p>
-                            <p>本網站的快速鍵﹝Accesskey﹞設定如下：</p>
-                            <ul class="accesskeyDefine">
-                                <li>Alt+U：上方主導覽選單區塊。</li>
-                                <li>Alt+C：中央內容區塊。</li>
-                                <li>Alt+S：網站搜尋。</li>
-                                <li>Alt+Z：下方功能區塊。</li>
-                            </ul>
-                            <p>※當本網站項目頁籤無法以滑鼠點選時，您可利用以下鍵盤操作方式瀏覽資料 <br /> ← → or ↑↓：按左右鍵或上下鍵移動標籤順序。 <br /> Home or End→：可直接跳至標籤第一項或者最後一項。 <br /> Tab：停留於該標籤後,可利用Tab鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使← → or↑↓鍵移動項目順序。 <br /> Tab + Shift：按Tab + Shift可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用← → or↑↓鍵移動標籤順序。 </p>
-                            <ul class="cascading">
-                                <li><a href="#">1. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">1. 第一層網頁</a></li>
-                                <li><a href="#">1. 第一層網頁</a></li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">2. 第一層網頁</a>
-                                    <ul>
-                                        <li><a href="#">1-1. 第2層網頁</a>
-                                            <ul>
-                                                <li><a href="#">1-1-1. 第3層網頁</a></li>
-                                                <li><a href="#">1-1-2. 第3層網頁</a>
-                                                    <ul>
-                                                        <li><a href="#">1-1-1-1. 第4層網頁</a>
-                                                            <ul>
-                                                                <li><a href="#">1-1-1-1-1. 第5層網頁</a></li>
-                                                                <li><a href="#">1-1-1-1-2. 第5層網頁</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <!--ap start -->
+                        <section class="ap">
+                            <h2>文章標題</h2>
                             
-                            <div class="quickLink">
-                                <ul>
-                                    <li><a href="javascript:history.back();" class="back">回上一頁</a>
-                                        <noscript> ( alt + ← 回上一頁) </noscript>
-                                    </li>
-                                </ul>
+                          <ul class="publish_info_top">
+                                <li>瀏覽人次：6923</li>
+                                <li>最後更新時間：2020-02-22</li>
+                            </ul>
+                            <!-- 我要發問 start -->
+                            <div class="ask_questions">
+                                <button class="btn btn-orange"> 我要發問</button>
+                                <div class="questions_block">
+                                    <div class="close"><a href="#"><img src="images/icon_add2.svg" alt="close"></a></div>
+                                    <ul>
+                                        <li><a href="#">至常見問答查詢</a></li>
+                                        <li><a href="#">我要繼續寫信</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </section>
-                        <!--sitemap end -->
-                        <!--右欄資訊 end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--內頁 end -->
-        <!--第七組 fatfoot start -->
-        <div class="Block7 hidden-xs">
-            <div class="container">
-                <div class="row clearfix ">
-                    <div class="col-md-12 ">
-                        <!--FatFooter -->
-                        <div id="FatFooter">
-                            <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button>
-                            <nav>
-                                <ul>
-                                    <li><a href="javascript:;" title="">研究所介紹</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">所長介紹</a>
-                                                <ul>
-                                                    <li><a href="javascript:;" title=""> 第三層項目1</a></li>
-                                                    <li><a href="javascript:;" title=""> 第三層項目2</a></li>
-                                                    <li><a href="javascript:;" title=""> 第三層項目3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;" title="">歷史沿革 <li><a href="javascript:;" title="">組織架構與聯絡資訊</li>
-                                            </a>
-                                            <li><a href="javascript:;" title="">各組業務</a></li>
-                                            <li><a href="javascript:;" title="">研究所研究架構</a></li>
-                                            <li><a href="javascript:;" title="">2016-2019職業安全</a></li>
-                                            <li><a href="javascript:;" title="">衛生研究策略規劃</a></li>
-                                            <li><a href="javascript:;" title="">交通資訊</a></li>
-                                            <li><a href="javascript:;" title="">大事紀</a></li>
-                                            <li><a href="javascript:;" title="">研發替代役相關資訊</a></li>
-                                            <li><a href="javascript:;" title="">重大政策</a></li>
+                            <!-- 我要發問 end -->
+                            <div class="explain_block">週休二日新制實施後，各界仍有希望給予調整延長工時限制、例假安排及特別休假規定之修法建議，為使相關法令能更符勞雇實務需求，勞動部擬具《勞動基準法》部分條文修正案，並經總統於107年1月31日公布。</div>
+                            <!--Accordion  start-->
+                            <div class="accordion_grounp">
+                                <!-- accordionblock  start-->
+                                <div class="accordionblock">
+                                    <div class="Q"><a href="javascript:;">雇主可否解僱欲申請復職之育嬰留停受僱者? <span class="word">收合</span></a></div>
+                                    <div class="answer">
+                                        <div class="content">
+                                            <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordionblock  end-->
+                                <!-- accordionblock  start-->
+                                <div class="accordionblock">
+                                    <div class="Q"><a href="javascript:;">雇主可否解僱欲申請復職之育嬰留停受僱者雇主可否解僱欲申僱者?<span class="file_doc">doc</span><span class="file_pdf">pdf</span><span class="word">收合</span></a></div>
+                                    <div class="answer">
+                                        <div class="content">
+                                            <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文</p>
+                                            <ul>
+                                                <li>
+                                                    <p>說明文字說明文字說明文字說明文字說明文字<a href="#"><span class="file_doc">doc</span><span class="file_pdf">pdf</span></a></p>
+                                                </li>
+                                                <li>
+                                                    <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字</p>
+                                                </li>
+                                                <li>
+                                                    <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字</p>
+                                                </li>
+                                                <li>
+                                                    <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <ul class="answer_list">
+                                            <li><a href="#">退休要件<span class="file_doc">doc</span><span class="file_pdf">pdf</span></a></li>
+                                            <li><a href="#">退休金給付標準</a></li>
+                                            <li><a href="#">勞工退休準備金制度</a></li>
+                                            <li><a href="#">勞工退休準備金提撥率參考試算軟體</a></li>
+                                            <li><a href="#">勞工適用勞動基準法退休金制度年資之退休金試算表</a></li>
+                                            <li><a href="#">退休解釋令</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a href="javascript:;" title="">熱線消息</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">新聞稿</a></li>
-                                            <li><a href="javascript:;" title="">法規新訊</a></li>
-                                            <li><a href="javascript:;" title="">工安警訊</a></li>
-                                            <li><a href="javascript:;" title="">研究新訊</a></li>
-                                            <li><a href="javascript:;" title="">研討會消息</a></li>
-                                            <li><a href="javascript:;" title="">科研採購</a></li>
-                                            <li><a href="javascript:;" title="">其他公告</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:;" title="">研究成果</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">第二層項目1</a></li>
-                                            <li><a href="javascript:;" title="">各年度研究報</a></li>
-                                            <li><a href="javascript:;" title="">勞動及職業安全衛生簡訊</a></li>
-                                            <li><a href="javascript:;" title="">勞動及職業安全衛生研究季刊</a></li>
-                                            <li><a href="javascript:;" title="">勞動及職業安全衛生技術叢</a></li>
-                                            <li><a href="javascript:;" title="">勞動及職業安全衛生研究年報</a></li>
-                                            <li><a href="javascript:;" title="">其他出版品</a></li>
-                                            <li><a href="javascript:;" title="">出版品授權利用聲明</a></li>
-                                            <li><a href="javascript:;" title="">政府網站資料開放宣告</a></li>
-                                            <li><a href="javascript:;" title="">常見問題答客問FAQ</a></li>
-                                            <li><a href="javascript:;" title="">重要績效輯</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:;" title="">勞動主題館</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">安全衛生法規資料庫</a></li>
-                                            <li><a href="javascript:;" title="">勞動相關法規資料庫</a></li>
-                                            <li><a href="javascript:;" title="">營造業重大職災知識網</a></li>
-                                            <li><a href="javascript:;" title="">勞工心理健康專區</a></li>
-                                            <li><a href="javascript:;" title="">防護具專區</a></li>
-                                            <li><a href="javascript:;" title="">職場健康促進網</a></li>
-                                            <li><a href="javascript:;" title="">研究報告資料庫</a></li>
-                                            <li><a href="javascript:;" title="">分析方法資料庫</a></li>
-                                            <li><a href="javascript:;" title="">物質安全資料表</a></li>
-                                            <li><a href="javascript:;" title="">歷史資料庫</a></li>
-                                            <li><a href="javascript:;" title="">安全資料表資料庫</a></li>
-                                            <li><a href="javascript:;" title="">奈米物質安全衛生管理主題區</a></li>
-                                            <li><a href="javascript:;" title="">Smartpeople智客</a></li>
-                                            <li><a href="javascript:;" title="">關鍵性勞動市場指標</a></li>
-                                            <li><a href="javascript:;" title="">安全專有名詞辭典</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:;" title="">政府公開資訊</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">研究報告</a></li>
-                                            <li><a href="javascript:;" title="">施政計畫</a></li>
-                                            <li><a href="javascript:;" title="">預算及決算書</a></li>
-                                            <li><a href="javascript:;" title="">行政指導有關文書</a></li>
-                                            <li><a href="javascript:;" title="">請願結果與訴願之決定</a></li>
-                                            <li><a href="javascript:;" title="">書面之公共工程及採購契約</a></li>
-                                            <li><a href="javascript:;" title="">支付之補助</a></li>
-                                            <li><a href="javascript:;" title="">出國報告</a></li>
-                                            <li><a href="javascript:;" title="">政府機關業務宣導</a></li>
-                                            <li><a href="javascript:;" title="">其他</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:;" title="">便民服務</a>
-                                        <ul>
-                                            <li><a href="javascript:;" title="">心理量表測驗系統平台</a></li>
-                                            <li><a href="javascript:;" title="">廉政行動站</a></li>
-                                            <li><a href="javascript:;" title="">會議室租借</a></li>
-                                            <li><a href="javascript:;" title="">資料索取</a></li>
-                                            <li><a href="javascript:;" title="">展示館參訪申請</a></li>
-                                            <li><a href="javascript:;" title="">針扎防護通報系統</a></li>
-                                            <li><a href="javascript:;" title="">其他業務</a></li>
-                                            <li><a href="javascript:;" title="">勞工教育資源</a></li>
-                                            <li><a href="javascript:;" title="">基本資料檔案下載</a></li>
-                                            <li><a href="javascript:;" title="">性平專區</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
+                                    </div>
+                                </div>
+                                <!-- accordionblock  end-->
+                                <!-- accordionblock  start-->
+                                <div class="accordionblock">
+                                    <div class="Q"><a href="javascript:;">雇主可否解僱欲申請復職之育嬰留停受僱者?<span class="word">收合</span></a></div>
+                                    <div class="answer">
+                                        <div class="content">
+                                            <p>說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字說明文字。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordionblock  end-->
+                            </div>
+                            <!--Accordion  end-->  
+                        
+                        
+                        
+                        
+                        <div class="quickLink">
+                            <ul>
+                                <li><a href="javascript:history.back();" class="back">回上一頁</a>
+                                    <noscript> ( alt + ← 回上一頁) </noscript>
+                                </li>
+                            </ul>
                         </div>
-                        <!--FatFooter -->
+    </section>
+    <!--ap end -->
+    <!--右欄資訊 end -->
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--內頁 end -->
+    <!--第七組 fatfoot start -->
+    <div class="Block7 hidden-xs">
+        <div class="container">
+            <div class="row clearfix ">
+                <div class="col-md-12 ">
+                    <!--FatFooter -->
+                    <div id="FatFooter">
+                        <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button>
+                        <nav>
+                            <ul>
+                                <li><a href="javascript:;" title="">研究所介紹</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">所長介紹</a>
+                                            <ul>
+                                                <li><a href="javascript:;" title=""> 第三層項目1</a></li>
+                                                <li><a href="javascript:;" title=""> 第三層項目2</a></li>
+                                                <li><a href="javascript:;" title=""> 第三層項目3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" title="">歷史沿革 <li><a href="javascript:;" title="">組織架構與聯絡資訊</li>
+                                        </a>
+                                        <li><a href="javascript:;" title="">各組業務</a></li>
+                                        <li><a href="javascript:;" title="">研究所研究架構</a></li>
+                                        <li><a href="javascript:;" title="">2016-2019職業安全</a></li>
+                                        <li><a href="javascript:;" title="">衛生研究策略規劃</a></li>
+                                        <li><a href="javascript:;" title="">交通資訊</a></li>
+                                        <li><a href="javascript:;" title="">大事紀</a></li>
+                                        <li><a href="javascript:;" title="">研發替代役相關資訊</a></li>
+                                        <li><a href="javascript:;" title="">重大政策</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;" title="">熱線消息</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">新聞稿</a></li>
+                                        <li><a href="javascript:;" title="">法規新訊</a></li>
+                                        <li><a href="javascript:;" title="">工安警訊</a></li>
+                                        <li><a href="javascript:;" title="">研究新訊</a></li>
+                                        <li><a href="javascript:;" title="">研討會消息</a></li>
+                                        <li><a href="javascript:;" title="">科研採購</a></li>
+                                        <li><a href="javascript:;" title="">其他公告</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;" title="">研究成果</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">第二層項目1</a></li>
+                                        <li><a href="javascript:;" title="">各年度研究報</a></li>
+                                        <li><a href="javascript:;" title="">勞動及職業安全衛生簡訊</a></li>
+                                        <li><a href="javascript:;" title="">勞動及職業安全衛生研究季刊</a></li>
+                                        <li><a href="javascript:;" title="">勞動及職業安全衛生技術叢</a></li>
+                                        <li><a href="javascript:;" title="">勞動及職業安全衛生研究年報</a></li>
+                                        <li><a href="javascript:;" title="">其他出版品</a></li>
+                                        <li><a href="javascript:;" title="">出版品授權利用聲明</a></li>
+                                        <li><a href="javascript:;" title="">政府網站資料開放宣告</a></li>
+                                        <li><a href="javascript:;" title="">常見問題答客問FAQ</a></li>
+                                        <li><a href="javascript:;" title="">重要績效輯</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;" title="">勞動主題館</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">安全衛生法規資料庫</a></li>
+                                        <li><a href="javascript:;" title="">勞動相關法規資料庫</a></li>
+                                        <li><a href="javascript:;" title="">營造業重大職災知識網</a></li>
+                                        <li><a href="javascript:;" title="">勞工心理健康專區</a></li>
+                                        <li><a href="javascript:;" title="">防護具專區</a></li>
+                                        <li><a href="javascript:;" title="">職場健康促進網</a></li>
+                                        <li><a href="javascript:;" title="">研究報告資料庫</a></li>
+                                        <li><a href="javascript:;" title="">分析方法資料庫</a></li>
+                                        <li><a href="javascript:;" title="">物質安全資料表</a></li>
+                                        <li><a href="javascript:;" title="">歷史資料庫</a></li>
+                                        <li><a href="javascript:;" title="">安全資料表資料庫</a></li>
+                                        <li><a href="javascript:;" title="">奈米物質安全衛生管理主題區</a></li>
+                                        <li><a href="javascript:;" title="">Smartpeople智客</a></li>
+                                        <li><a href="javascript:;" title="">關鍵性勞動市場指標</a></li>
+                                        <li><a href="javascript:;" title="">安全專有名詞辭典</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;" title="">政府公開資訊</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">研究報告</a></li>
+                                        <li><a href="javascript:;" title="">施政計畫</a></li>
+                                        <li><a href="javascript:;" title="">預算及決算書</a></li>
+                                        <li><a href="javascript:;" title="">行政指導有關文書</a></li>
+                                        <li><a href="javascript:;" title="">請願結果與訴願之決定</a></li>
+                                        <li><a href="javascript:;" title="">書面之公共工程及採購契約</a></li>
+                                        <li><a href="javascript:;" title="">支付之補助</a></li>
+                                        <li><a href="javascript:;" title="">出國報告</a></li>
+                                        <li><a href="javascript:;" title="">政府機關業務宣導</a></li>
+                                        <li><a href="javascript:;" title="">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:;" title="">便民服務</a>
+                                    <ul>
+                                        <li><a href="javascript:;" title="">心理量表測驗系統平台</a></li>
+                                        <li><a href="javascript:;" title="">廉政行動站</a></li>
+                                        <li><a href="javascript:;" title="">會議室租借</a></li>
+                                        <li><a href="javascript:;" title="">資料索取</a></li>
+                                        <li><a href="javascript:;" title="">展示館參訪申請</a></li>
+                                        <li><a href="javascript:;" title="">針扎防護通報系統</a></li>
+                                        <li><a href="javascript:;" title="">其他業務</a></li>
+                                        <li><a href="javascript:;" title="">勞工教育資源</a></li>
+                                        <li><a href="javascript:;" title="">基本資料檔案下載</a></li>
+                                        <li><a href="javascript:;" title="">性平專區</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                    <!--FatFooter -->
                 </div>
             </div>
         </div>
-        <!--第七組 fatfoot end-->
+    </div>
+    <!--第七組 fatfoot end-->
     </section>
     <!--MainContent end -->
     <!--Footer start -->
@@ -519,7 +469,7 @@
         </div>
     </footer>
     <!--Footer end -->
-     <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>

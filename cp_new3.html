@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>勞動部勞動及職業安全衛生研究所</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/module/bootstrap-3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/module/bootstrap-3.3.2/css/bootstrap-theme.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- mega menu-->
+    <link rel="stylesheet" href="assets/css/megamenu.css">
+    <!-- slick 輪播-->
+    <link rel="stylesheet" href="assets/module/slick/slick.css">
+    <link rel="stylesheet" href="assets/module/slick/slick-theme.css">
+    <!-- slick 輪播自訂CSS -->
+    <link rel="stylesheet" href="css/slick-slide.css">
+    <!-- fullcalendar 自適應行事曆 -->
+    <link rel="stylesheet" href="assets/module/fullcalendar-2.3.1/fullcalendar.css">
+    <link rel="stylesheet" href="assets/module/fullcalendar-2.3.1/fullcalendar.print.css" media='print'>
+    <!--fontello icon font -->
+    <link rel="stylesheet" href="assets/module/fontello/css/fontello.css">
+    <!-- 自訂CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.offcanvas.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <!--變換字型大小-->
+    <link rel="stylesheet" type="text/css" href="css/fontS.css" title="small" data-cat="font" />
+    <link rel="alternate stylesheet" type="text/css" href="css/fontM.css" title="medium" data-cat="font" />
+    <link rel="alternate stylesheet" type="text/css" href="css/fontL.css" title="large" data-cat="font" />
+    <styleSwitcher cat="font" />
+    <script type="text/javascript" src="js/styleswitcher.js"></script><!-- 切換大、中、小字形-->
+</head>
+
+<body>
+    <header id="Header">
+        <nav class="navbar navbar-default megamenu" role="navigation">
+            <div class="container Topheader">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"> <span class="sr-only">Toggle navigation</span><i class="icon-menu"></i> </button>
+                    <h1 class="Logo"><a href="index.html"><img src="images/logo.png" alt="勞動部勞動及職業安全衛生研究所"></a></h1>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right"> <span class="sr-only">Toggle navigation</span><i class="icon-search"></i> </button>
+                </div>
+                <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
+                    <div class="pull-sm-right pull-md-right pull-lg-right">
+                        <ul class="nav navbar-nav Topnav">
+                            <a href="javascript:;" title="導覽列" class="accesskey" accesskey="U">:::</a>
+                            <li><a href="javascript:;">回首頁</a></li>
+                            <li><a href="javascript:;">網站導覽</a></li>
+                            <li><a href="javascript:;">RSS</a></li>
+                            <li><a href="javascript:;">民意信箱</a></li>
+                            <li><a href="javascript:;">English</a></li>
+                            <li><a href="javascript:;">常見問答</a></li>
+                        </ul>
+                        <!--字級設定 start -->
+                        <!--custom Start-->
+                        <div class="custom">
+                            <!-- -->
+                            <div class="fontSet"><span>字級：</span>
+                                <div id="fontSwitcherLayer">
+                                    <ul>
+                                        <li class="fontS"><a id="small" data-cat="font" href="css/fontS.css" class="sw-here" onclick="setActiveStyleSheet('small', 'font'); return false;" onkeypress="setActiveStyleSheet('small', 'font'); return false;">小</a></li>
+                                        <li class="fontM"><a id="medium" data-cat="font" href="css/fontM.css" onclick="setActiveStyleSheet('medium', 'font'); return false;" onkeypress="setActiveStyleSheet('medium', 'font'); return false;">中</a></li>
+                                        <li class="fontL"><a id="large" data-cat="font" href="css/fontL.css" onclick="setActiveStyleSheet('large', 'font'); return false;" onkeypress="setActiveStyleSheet('large', 'font'); return false;">大</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <!-- -->
+                            <noscript> 當SCRIPT關閉時，選擇字型大小，請參考：IE6請利用鍵盤按住ALT鍵 + V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小,而IE7或Firefox瀏覽器則可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。當SCRIPT關閉時，選擇顏色：無法選擇背景色項目，但不影響資訊文字瀏覽 </noscript>
+                        </div>
+                        <!--custom End-->
+                        <!--字級設定 end -->
+                        <!--分享社群 start -->
+                        <div class="share">
+                            <ul>
+                                <li class="flickr"><a href="javascript:;"><img src="images/space.gif" alt="flickr"></a></li>
+                                <li class="fb"><a href="javascript:;"><img src="images/space.gif" alt="facebook"></a></li>
+                                <li class="rss"><a href="javascript:;"><img src="images/space.gif" alt="rss"></a></li>
+                                <li class="twitter"><a href="javascript:;"><img src="images/space.gif" alt="twitter"></a></li>
+                            </ul>
+                        </div>
+                        <!--分享社群 end -->
+                        <div class="Search">
+                            <form class="navbar-form pull-sm-right pull-md-right pull-lg-right" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入關鍵字" accesskey="S">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-search"> </span></button>
+                                    </span> </div>
+                                <div class="AdvSearch"><a href="javascript:;">進階搜尋</a></div>
+                                <div class="HotKeywords"> <a href="javascript:;">基本工資</a> <a href="javascript:;">兼任助理</a> <a href="javascript:;">外勞</a> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--menu start -->
+                <div class="collapse navbar-collapse Topmenu" id="offcanvas-left" role="navigation">
+                    <nav class="menu">
+                        <ul>
+                            <!--此段要再畫面小於768時，才出現 -->
+                            <li class="nav visible-xs"><a href="javascript:;">回首頁</a></li>
+                            <li class="nav visible-xs"><a href="javascript:;">網站導覽</a></li>
+                            <li class="nav visible-xs"><a href="javascript:;">RSS</a></li>
+                            <li class="nav visible-xs"><a href="javascript:;">民意信箱</a></li>
+                            <li class="nav visible-xs"><a href="javascript:;">English</a></li>
+                            <li class="nav visible-xs"><a href="javascript:;">常見問答</a></li>
+                            <li><a href="javascript:;">研究所介紹</a>
+                                <ul>
+                                    <li><a href="javascript:;">最新消息</a></li>
+                                    <li><a href="javascript:;">活動訊息</a></li>
+                                    <li><a href="javascript:;">機關徵才</a></li>
+                                    <li><a href="javascript:;">推薦專區</a></li>
+                                    <li><a href="javascript:;">招標資訊</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">熱線消息</a>
+                                <ul>
+                                    <li><a href="javascript:;" title="編製要點">編製要點</a></li>
+                                    <li><a href="javascript:;" title="季報">季報</a></li>
+                                    <li><a href="javascript:;" title="半年結算報告">半年結算報告</a></li>
+                                    <li><a href="javascript:;" title="決算">決算</a></li>
+                                    <li><a href="javascript:;" title="審計部查核、審核報告" target="_nwGip">審計部查核、審核報告</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">研究成果</a>
+                                <ul>
+                                    <li><a href="javascript:;" title="行政院內部控制推動及督導小組">行政院內部控制推動及督導小組</a></li>
+                                    <li><a href="javascript:;" title="內部控制相關規定">內部控制相關規定</a></li>
+                                    <li><a href="javascript:;" title="內部控制制度共通性作業範例">內部控制制度共通性作業範例</a></li>
+                                    <li><a href="javascript:;" title="主計總處內部控制制度">主計總處內部控制制度</a></li>
+                                    <li><a href="javascript:;" title="違失案例">違失案例</a></li>
+                                    <li><a href="javascript:;" title="教育訓練">教育訓練</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">勞動主題館</a></li>
+                            <li><a href="javascript:;">政府資訊公開</a>
+                                <ul>
+                                    <li><a href="javascript:;">重點業務介紹</a></li>
+                                    <li><a href="javascript:;">資訊推動計畫與成果</a></li>
+                                    <li><a href="javascript:;">施政白皮書施政白皮書施政白皮書</a>
+                                        <ul>
+                                            <li><a href="javascript:;">第三層選單測試第三層選單測試</a>
+                                                <ul>
+                                                    <li><a href="javascript:;">第四層選單測試</a></li>
+                                                    <li><a href="javascript:;">第四層選單測試</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:;">104年</a></li>
+                                            <li><a href="javascript:;">103年</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">地理資訊系統</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">便民服務 </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--menu end -->
+            </div>
+        </nav>
+    </header>
+    <!--MainContent start -->
+    <section class="MainContent">
+        <!--內頁 start -->
+        <div class="Block_incontent">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class=" col-md-3 hidden-xs">
+                        <!--左欄資訊 start -->
+                        <!--inmenu start -->
+                        <nav class="inmenu ">
+                            <h2>研究所介紹</h2>
+                            <ul>
+                                <li><a href="#">最新消息</a></li>
+                                <li><a href="#">活動訊息</a></li>
+                                <li><a href="#">機關徵才</a></li>
+                                <li><a href="#">推薦專區</a></li>
+                                <li><a href="#">招標資訊</a></li>
+                            </ul>
+                        </nav>
+                        <!--inmenu end -->
+                        <!--左欄資訊 end -->
+                    </div>
+                    <div class=" col-md-9">
+                        <!--右欄資訊 start -->
+                        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+                        <ol class="breadcrumb">
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">新聞公告</a></li>
+                            <li class="active">公佈欄</li>
+                        </ol>
+                        <!--cp start -->
+                        <section class="cp">
+                            <h2>新聞公告</h2>
+                            <div class="tabSet">
+                                <section class="tabs cptab">
+                                    <button type="button" class="tabItem active">第一個頁籤</button>
+                                    <!--  <h2 class="tabItem active"><a href="#">第一個頁籤</a></h2> -->
+                                    <!--選到的頁籤項目-->
+                                    <div class="tabContent">
+                                        <p>前言1</p>
+                                        <p>勞動基準法係依據我國憲法第153條，「國家為改良勞工及農民之生活，增進其生產技能，應制定保護勞工及農民之法律，實施保護勞工及農民之政策。」的規定而制訂。</p>
+                                        <p>勞動基準法係規定勞動條件最低標準，為保障勞工權益，加強勞雇關係，促進經濟發展，適用勞動基準法之勞工權益將獲得最基本之保障，凡適用該法之行業或工作者，雇主與勞工所訂勞動條件，不得低於該法所定之最低標準。</p>
+                                        <p>勞動基準法之內涵</p>
+                                        <p>一、勞動契約</p>
+                                        <p>凡適用勞動基準法之事業單位，其與勞工間依勞動契約成立勞動關係。</p>
+                                        <p>勞動契約，分為定期契約及不定期契約。臨時性、短期性、季節性及特定性工作得為定期契約；有繼定期契約屆滿後，有下列情形之一者，視為不定期契約:</p>
+                                        <p>勞工繼續工作而雇主不即表示反對意思者。</p>
+                                        <p>雖經另訂新約，惟其前後勞動契約之工作期間超過90日，前後契約間斷期間未超過30日者。 前項規定於特定性或季節性之定期工作不適用之。</p>
+                                        <div class="pubInfo">
+                                            <ul>
+                                                <li>發布單位：<em><a href="#">新聞局</a></em></li>
+                                                <li>市府分類：<em>教育文化, 宣導活動, 便民服務, 一般行政, 政令政策, 生活資訊, 資訊管理</em></li>
+                                                <li>最後異動時間：<em>2012-02-22 15:41:28</em></li>
+                                                <li>點閱次數：<em>192,643</em></li>
+                                            </ul>
+                                        </div>
+                                        <section class="attachment hidden">
+                                            <h3>檔案下載（或附件）</h3>
+                                            <ul class="filename">
+                                                <li><a href="#">研習課程報名表（doc, docx）</a><span class="fileType doc" title="Microsoft Word"></span><span class="fileSize">(213 KB)</span></li>
+                                                <li><a href="#">課程內容簡介（PDF）</a><span class="fileType pdf" title="Adobe Portable Document Format"></span><span class="fileSize">(157 KB)</span></li>
+                                                <li><a href="#">試算表 xls xlsx</a> <span class="fileType xls" title="Microsoft Excel "></span><span class="fileSize">(756 KB)</span></li>
+                                                <li><a href="#">課程大綱：PowerPoint 簡報檔</a> <span class="fileType ppt" title="Microsoft PowerPoint"></span><span class="fileSize">(965 KB)</span></li>
+                                                <li><a href="#">圖檔：上課地點位置圖</a> <span class="fileType jpg" title="jpg 圖檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音</a> <span class="fileType mp3" title="mp3 聲音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">影音影音影音影音影音</a> <span class="fileType mov" title="mov 影音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">文字文字文字文字文字文字文字</a> <span class="fileType txt" title="txt 純文字檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">其他格式其他格式其他格式其他格式</a> <span class="fileType other" title="其他檔案格式"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">全部資料壓縮檔</a> <span class="fileType zip" title="zip 壓縮檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">open office</a> <span class="fileType open" title="open office"></span><span class="fileSize">(688 KB)</span></li>
+                                            </ul>
+                                        </section>
+                                        <!-- file download 檔案下載 -->
+                                        <div class="file_download">
+                                            <h3>檔案下載</h3>
+                                            <ul>
+                                                <li> <span>檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱</span>
+                                                    <a href="xxxx.doc">檔案名稱.doc</a>
+                                                    <a href="xxxx.docx">檔案名稱.docx</a>
+                                                    <a href="xxxx.odt">檔案名稱.odt</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.xls">檔案名稱.xls</a>
+                                                    <a href="xxxx.xlsx">檔案名稱.xlsx</a>
+                                                    <a href="xxxx.csv">檔案名稱.csv</a>
+                                                    <a href="xxxx.ods">檔案名稱.ods</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.ppt">檔案名稱.ppt</a>
+                                                    <a href="xxxx.pptx">檔案名稱.pptx</a>
+                                                    <a href="xxxx.odp">檔案名稱.odp</a>
+                                                    <a href="xxxx.pdf">檔案名稱.odp</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.zip">檔案名稱.zip</a>
+                                                    <a href="xxxx.txt">檔案名稱.txt</a>
+                                                    <a href="xxxx.mov">檔案名稱.mov</a>
+                                                    <a href="xxxx.mp3">檔案名稱.mp3</a>
+                                                    <a href="xxxx.jpg">檔案名稱.jpg</a>
+                                                    <a href="xxxx.wmv">檔案名稱.wmv</a>
+                                                    <a href="xxxx.mp4">檔案名稱.mp4</a>
+                                                    <a href="xxxx.xxxxx">檔案名稱.mp4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--  -->
+                                        <section class="attachment">
+                                            <h3>相關圖檔</h3>
+                                            <ul class="images">
+                                                <li><a href="#"><img src="images/h01.jpg" alt="替代文字">一二三四五六七八九十一二</a></li>
+                                                <li><a href="#"><img src="images/h02.jpg" alt="替代文字">一二三四五六七八九十一二三四五</a></li>
+                                                <li><a href="#"><img src="images/h03.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/h04.jpg" alt="替代文字">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a></li>
+                                                <li><a href="#"><img src="images/01.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/02.jpg" alt="替代文字">一二三四五六七八九十一二三四五六</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="seeAlso">
+                                            <h3>相關連結（或延伸閱讀）</h3>
+                                            <ul>
+                                                <li><a href="#">臺中市動物之家2月28日連續假日開放時間</a></li>
+                                                <li><a href="#">其他文章主題</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <button type="button" class="tabItem">第二個頁籤</button>
+                                    <!-- <h2 class="tabItem"><a href="#">第二個頁籤</a></h2> -->
+                                    <div class="tabContent">
+                                        <p>前言2</p>
+                                        <p>勞動基準法係依據我國憲法第153條，「國家為改良勞工及農民之生活，增進其生產技能，應制定保護勞工及農民之法律，實施保護勞工及農民之政策。」的規定而制訂。</p>
+                                        <p>勞動基準法係規定勞動條件最低標準，為保障勞工權益，加強勞雇關係，促進經濟發展，適用勞動基準法之勞工權益將獲得最基本之保障，凡適用該法之行業或工作者，雇主與勞工所訂勞動條件，不得低於該法所定之最低標準。</p>
+                                        <p>勞動基準法之內涵</p>
+                                        <p>一、勞動契約</p>
+                                        <p>凡適用勞動基準法之事業單位，其與勞工間依勞動契約成立勞動關係。</p>
+                                        <p>勞動契約，分為定期契約及不定期契約。臨時性、短期性、季節性及特定性工作得為定期契約；有繼定期契約屆滿後，有下列情形之一者，視為不定期契約:</p>
+                                        <p>勞工繼續工作而雇主不即表示反對意思者。</p>
+                                        <p>雖經另訂新約，惟其前後勞動契約之工作期間超過90日，前後契約間斷期間未超過30日者。 前項規定於特定性或季節性之定期工作不適用之。</p>
+                                        <div class="pubInfo">
+                                            <ul>
+                                                <li>發布單位：<em><a href="#">新聞局</a></em></li>
+                                                <li>市府分類：<em>教育文化, 宣導活動, 便民服務, 一般行政, 政令政策, 生活資訊, 資訊管理</em></li>
+                                                <li>最後異動時間：<em>2012-02-22 15:41:28</em></li>
+                                                <li>點閱次數：<em>192,643</em></li>
+                                            </ul>
+                                        </div>
+                                        <section class="attachment hidden">
+                                            <h3>檔案下載（或附件）</h3>
+                                            <ul class="filename">
+                                                <li><a href="#">研習課程報名表（doc, docx）</a><span class="fileType doc" title="Microsoft Word"></span><span class="fileSize">(213 KB)</span></li>
+                                                <li><a href="#">課程內容簡介（PDF）</a><span class="fileType pdf" title="Adobe Portable Document Format"></span><span class="fileSize">(157 KB)</span></li>
+                                                <li><a href="#">試算表 xls xlsx</a> <span class="fileType xls" title="Microsoft Excel "></span><span class="fileSize">(756 KB)</span></li>
+                                                <li><a href="#">課程大綱：PowerPoint 簡報檔</a> <span class="fileType ppt" title="Microsoft PowerPoint"></span><span class="fileSize">(965 KB)</span></li>
+                                                <li><a href="#">圖檔：上課地點位置圖</a> <span class="fileType jpg" title="jpg 圖檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音</a> <span class="fileType mp3" title="mp3 聲音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">影音影音影音影音影音</a> <span class="fileType mov" title="mov 影音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">文字文字文字文字文字文字文字</a> <span class="fileType txt" title="txt 純文字檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">其他格式其他格式其他格式其他格式</a> <span class="fileType other" title="其他檔案格式"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">全部資料壓縮檔</a> <span class="fileType zip" title="zip 壓縮檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">open office</a> <span class="fileType open" title="open office"></span><span class="fileSize">(688 KB)</span></li>
+                                            </ul>
+                                        </section>
+                                        <!-- file download 檔案下載 -->
+                                        <div class="file_download">
+                                            <h3>檔案下載</h3>
+                                            <ul>
+                                                <li> <span>檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱</span>
+                                                    <a href="xxxx.doc">檔案名稱.doc</a>
+                                                    <a href="xxxx.docx">檔案名稱.docx</a>
+                                                    <a href="xxxx.odt">檔案名稱.odt</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.xls">檔案名稱.xls</a>
+                                                    <a href="xxxx.xlsx">檔案名稱.xlsx</a>
+                                                    <a href="xxxx.csv">檔案名稱.csv</a>
+                                                    <a href="xxxx.ods">檔案名稱.ods</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.ppt">檔案名稱.ppt</a>
+                                                    <a href="xxxx.pptx">檔案名稱.pptx</a>
+                                                    <a href="xxxx.odp">檔案名稱.odp</a>
+                                                    <a href="xxxx.pdf">檔案名稱.odp</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.zip">檔案名稱.zip</a>
+                                                    <a href="xxxx.txt">檔案名稱.txt</a>
+                                                    <a href="xxxx.mov">檔案名稱.mov</a>
+                                                    <a href="xxxx.mp3">檔案名稱.mp3</a>
+                                                    <a href="xxxx.jpg">檔案名稱.jpg</a>
+                                                    <a href="xxxx.wmv">檔案名稱.wmv</a>
+                                                    <a href="xxxx.mp4">檔案名稱.mp4</a>
+                                                    <a href="xxxx.xxxxx">檔案名稱.mp4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--  -->
+                                        <section class="attachment">
+                                            <h3>相關圖檔</h3>
+                                            <ul class="images">
+                                                <li><a href="#"><img src="images/h01.jpg" alt="替代文字">一二三四五六七八九十一二</a></li>
+                                                <li><a href="#"><img src="images/h02.jpg" alt="替代文字">一二三四五六七八九十一二三四五</a></li>
+                                                <li><a href="#"><img src="images/h03.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/h04.jpg" alt="替代文字">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a></li>
+                                                <li><a href="#"><img src="images/01.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/02.jpg" alt="替代文字">一二三四五六七八九十一二三四五六</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="seeAlso">
+                                            <h3>相關連結（或延伸閱讀）</h3>
+                                            <ul>
+                                                <li><a href="#">臺中市動物之家2月28日連續假日開放時間</a></li>
+                                                <li><a href="#">其他文章主題</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <button type="button" class="tabItem">第三個頁籤</button>
+                                    <!--  <h2 class="tabItem"><a href="#">第三個頁籤</a></h2> -->
+                                    <div class="tabContent">
+                                        <p>前言3</p>
+                                        <p>勞動基準法係依據我國憲法第153條，「國家為改良勞工及農民之生活，增進其生產技能，應制定保護勞工及農民之法律，實施保護勞工及農民之政策。」的規定而制訂。</p>
+                                        <p>勞動基準法係規定勞動條件最低標準，為保障勞工權益，加強勞雇關係，促進經濟發展，適用勞動基準法之勞工權益將獲得最基本之保障，凡適用該法之行業或工作者，雇主與勞工所訂勞動條件，不得低於該法所定之最低標準。</p>
+                                        <p>勞動基準法之內涵</p>
+                                        <p>一、勞動契約</p>
+                                        <p>凡適用勞動基準法之事業單位，其與勞工間依勞動契約成立勞動關係。</p>
+                                        <p>勞動契約，分為定期契約及不定期契約。臨時性、短期性、季節性及特定性工作得為定期契約；有繼定期契約屆滿後，有下列情形之一者，視為不定期契約:</p>
+                                        <p>勞工繼續工作而雇主不即表示反對意思者。</p>
+                                        <p>雖經另訂新約，惟其前後勞動契約之工作期間超過90日，前後契約間斷期間未超過30日者。 前項規定於特定性或季節性之定期工作不適用之。</p>
+                                        <div class="pubInfo">
+                                            <ul>
+                                                <li>發布單位：<em><a href="#">新聞局</a></em></li>
+                                                <li>市府分類：<em>教育文化, 宣導活動, 便民服務, 一般行政, 政令政策, 生活資訊, 資訊管理</em></li>
+                                                <li>最後異動時間：<em>2012-02-22 15:41:28</em></li>
+                                                <li>點閱次數：<em>192,643</em></li>
+                                            </ul>
+                                        </div>
+                                        <section class="attachment hidden">
+                                            <h3>檔案下載（或附件）</h3>
+                                            <ul class="filename">
+                                                <li><a href="#">研習課程報名表（doc, docx）</a><span class="fileType doc" title="Microsoft Word"></span><span class="fileSize">(213 KB)</span></li>
+                                                <li><a href="#">課程內容簡介（PDF）</a><span class="fileType pdf" title="Adobe Portable Document Format"></span><span class="fileSize">(157 KB)</span></li>
+                                                <li><a href="#">試算表 xls xlsx</a> <span class="fileType xls" title="Microsoft Excel "></span><span class="fileSize">(756 KB)</span></li>
+                                                <li><a href="#">課程大綱：PowerPoint 簡報檔</a> <span class="fileType ppt" title="Microsoft PowerPoint"></span><span class="fileSize">(965 KB)</span></li>
+                                                <li><a href="#">圖檔：上課地點位置圖</a> <span class="fileType jpg" title="jpg 圖檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音</a> <span class="fileType mp3" title="mp3 聲音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">影音影音影音影音影音</a> <span class="fileType mov" title="mov 影音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">文字文字文字文字文字文字文字</a> <span class="fileType txt" title="txt 純文字檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">其他格式其他格式其他格式其他格式</a> <span class="fileType other" title="其他檔案格式"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">全部資料壓縮檔</a> <span class="fileType zip" title="zip 壓縮檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">open office</a> <span class="fileType open" title="open office"></span><span class="fileSize">(688 KB)</span></li>
+                                            </ul>
+                                        </section>
+                                        <!-- file download 檔案下載 -->
+                                        <div class="file_download">
+                                            <h3>檔案下載</h3>
+                                            <ul>
+                                                <li> <span>檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱</span>
+                                                    <a href="xxxx.doc">檔案名稱.doc</a>
+                                                    <a href="xxxx.docx">檔案名稱.docx</a>
+                                                    <a href="xxxx.odt">檔案名稱.odt</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.xls">檔案名稱.xls</a>
+                                                    <a href="xxxx.xlsx">檔案名稱.xlsx</a>
+                                                    <a href="xxxx.csv">檔案名稱.csv</a>
+                                                    <a href="xxxx.ods">檔案名稱.ods</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.ppt">檔案名稱.ppt</a>
+                                                    <a href="xxxx.pptx">檔案名稱.pptx</a>
+                                                    <a href="xxxx.odp">檔案名稱.odp</a>
+                                                    <a href="xxxx.pdf">檔案名稱.odp</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.zip">檔案名稱.zip</a>
+                                                    <a href="xxxx.txt">檔案名稱.txt</a>
+                                                    <a href="xxxx.mov">檔案名稱.mov</a>
+                                                    <a href="xxxx.mp3">檔案名稱.mp3</a>
+                                                    <a href="xxxx.jpg">檔案名稱.jpg</a>
+                                                    <a href="xxxx.wmv">檔案名稱.wmv</a>
+                                                    <a href="xxxx.mp4">檔案名稱.mp4</a>
+                                                    <a href="xxxx.xxxxx">檔案名稱.mp4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--  -->
+                                        <section class="attachment">
+                                            <h3>相關圖檔</h3>
+                                            <ul class="images">
+                                                <li><a href="#"><img src="images/h01.jpg" alt="替代文字">一二三四五六七八九十一二</a></li>
+                                                <li><a href="#"><img src="images/h02.jpg" alt="替代文字">一二三四五六七八九十一二三四五</a></li>
+                                                <li><a href="#"><img src="images/h03.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/h04.jpg" alt="替代文字">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a></li>
+                                                <li><a href="#"><img src="images/01.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/02.jpg" alt="替代文字">一二三四五六七八九十一二三四五六</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="seeAlso">
+                                            <h3>相關連結（或延伸閱讀）</h3>
+                                            <ul>
+                                                <li><a href="#">臺中市動物之家2月28日連續假日開放時間</a></li>
+                                                <li><a href="#">其他文章主題</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                    <button type="button" class="tabItem">第四個頁籤</button>
+                                    <!-- <h2 class="tabItem"><a href="#">第四個頁籤</a></h2> -->
+                                    <div class="tabContent">
+                                        <p>前言4</p>
+                                        <p>勞動基準法係依據我國憲法第153條，「國家為改良勞工及農民之生活，增進其生產技能，應制定保護勞工及農民之法律，實施保護勞工及農民之政策。」的規定而制訂。</p>
+                                        <p>勞動基準法係規定勞動條件最低標準，為保障勞工權益，加強勞雇關係，促進經濟發展，適用勞動基準法之勞工權益將獲得最基本之保障，凡適用該法之行業或工作者，雇主與勞工所訂勞動條件，不得低於該法所定之最低標準。</p>
+                                        <p>勞動基準法之內涵</p>
+                                        <p>一、勞動契約</p>
+                                        <p>凡適用勞動基準法之事業單位，其與勞工間依勞動契約成立勞動關係。</p>
+                                        <p>勞動契約，分為定期契約及不定期契約。臨時性、短期性、季節性及特定性工作得為定期契約；有繼定期契約屆滿後，有下列情形之一者，視為不定期契約:</p>
+                                        <p>勞工繼續工作而雇主不即表示反對意思者。</p>
+                                        <p>雖經另訂新約，惟其前後勞動契約之工作期間超過90日，前後契約間斷期間未超過30日者。 前項規定於特定性或季節性之定期工作不適用之。</p>
+                                        <div class="pubInfo">
+                                            <ul>
+                                                <li>發布單位：<em><a href="#">新聞局</a></em></li>
+                                                <li>市府分類：<em>教育文化, 宣導活動, 便民服務, 一般行政, 政令政策, 生活資訊, 資訊管理</em></li>
+                                                <li>最後異動時間：<em>2012-02-22 15:41:28</em></li>
+                                                <li>點閱次數：<em>192,643</em></li>
+                                            </ul>
+                                        </div>
+                                        <section class="attachment hidden">
+                                            <h3>檔案下載（或附件）</h3>
+                                            <ul class="filename">
+                                                <li><a href="#">研習課程報名表（doc, docx）</a><span class="fileType doc" title="Microsoft Word"></span><span class="fileSize">(213 KB)</span></li>
+                                                <li><a href="#">課程內容簡介（PDF）</a><span class="fileType pdf" title="Adobe Portable Document Format"></span><span class="fileSize">(157 KB)</span></li>
+                                                <li><a href="#">試算表 xls xlsx</a> <span class="fileType xls" title="Microsoft Excel "></span><span class="fileSize">(756 KB)</span></li>
+                                                <li><a href="#">課程大綱：PowerPoint 簡報檔</a> <span class="fileType ppt" title="Microsoft PowerPoint"></span><span class="fileSize">(965 KB)</span></li>
+                                                <li><a href="#">圖檔：上課地點位置圖</a> <span class="fileType jpg" title="jpg 圖檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音聲音</a> <span class="fileType mp3" title="mp3 聲音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">影音影音影音影音影音</a> <span class="fileType mov" title="mov 影音檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">文字文字文字文字文字文字文字</a> <span class="fileType txt" title="txt 純文字檔"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">其他格式其他格式其他格式其他格式</a> <span class="fileType other" title="其他檔案格式"></span><span class="fileSize">(123 KB)</span></li>
+                                                <li><a href="#">全部資料壓縮檔</a> <span class="fileType zip" title="zip 壓縮檔"></span><span class="fileSize">(688 KB)</span></li>
+                                                <li><a href="#">open office</a> <span class="fileType open" title="open office"></span><span class="fileSize">(688 KB)</span></li>
+                                            </ul>
+                                        </section>
+                                        <!-- file download 檔案下載 -->
+                                        <div class="file_download">
+                                            <h3>檔案下載</h3>
+                                            <ul>
+                                                <li> <span>檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱檔案名稱</span>
+                                                    <a href="xxxx.doc">檔案名稱.doc</a>
+                                                    <a href="xxxx.docx">檔案名稱.docx</a>
+                                                    <a href="xxxx.odt">檔案名稱.odt</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.xls">檔案名稱.xls</a>
+                                                    <a href="xxxx.xlsx">檔案名稱.xlsx</a>
+                                                    <a href="xxxx.csv">檔案名稱.csv</a>
+                                                    <a href="xxxx.ods">檔案名稱.ods</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.ppt">檔案名稱.ppt</a>
+                                                    <a href="xxxx.pptx">檔案名稱.pptx</a>
+                                                    <a href="xxxx.odp">檔案名稱.odp</a>
+                                                    <a href="xxxx.pdf">檔案名稱.odp</a>
+                                                </li>
+                                                <li><span>檔案名稱</span>
+                                                    <a href="xxxx.zip">檔案名稱.zip</a>
+                                                    <a href="xxxx.txt">檔案名稱.txt</a>
+                                                    <a href="xxxx.mov">檔案名稱.mov</a>
+                                                    <a href="xxxx.mp3">檔案名稱.mp3</a>
+                                                    <a href="xxxx.jpg">檔案名稱.jpg</a>
+                                                    <a href="xxxx.wmv">檔案名稱.wmv</a>
+                                                    <a href="xxxx.mp4">檔案名稱.mp4</a>
+                                                    <a href="xxxx.xxxxx">檔案名稱.mp4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!--  -->
+                                        <section class="attachment">
+                                            <h3>相關圖檔</h3>
+                                            <ul class="images">
+                                                <li><a href="#"><img src="images/h01.jpg" alt="替代文字">一二三四五六七八九十一二</a></li>
+                                                <li><a href="#"><img src="images/h02.jpg" alt="替代文字">一二三四五六七八九十一二三四五</a></li>
+                                                <li><a href="#"><img src="images/h03.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/h04.jpg" alt="替代文字">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</a></li>
+                                                <li><a href="#"><img src="images/01.jpg" alt="替代文字"></a></li>
+                                                <li><a href="#"><img src="images/02.jpg" alt="替代文字">一二三四五六七八九十一二三四五六</a></li>
+                                            </ul>
+                                        </section>
+                                        <section class="seeAlso">
+                                            <h3>相關連結（或延伸閱讀）</h3>
+                                            <ul>
+                                                <li><a href="#">臺中市動物之家2月28日連續假日開放時間</a></li>
+                                                <li><a href="#">其他文章主題</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="quickLink">
+                                <ul>
+                                    <li><a href="javascript:history.back();" class="back">回上一頁</a>
+                                        <noscript> ( alt + ← 回上一頁) </noscript>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!--cp end -->
+                        <!--右欄資訊 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--內頁 end -->
+        <!--第七組 fatfoot start -->
+        <div class="Block7 hidden-xs">
+            <div class="container">
+                <div class="row clearfix ">
+                    <div class="col-md-12 ">
+                        <!--FatFooter -->
+                        <div id="FatFooter">
+                            <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button>
+                            <nav>
+                                <ul>
+                                    <li><a href="javascript:;" title="">研究所介紹</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">所長介紹</a>
+                                                <ul>
+                                                    <li><a href="javascript:;" title=""> 第三層項目1</a></li>
+                                                    <li><a href="javascript:;" title=""> 第三層項目2</a></li>
+                                                    <li><a href="javascript:;" title=""> 第三層項目3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;" title="">歷史沿革 <li><a href="javascript:;" title="">組織架構與聯絡資訊</li>
+                                            </a>
+                                            <li><a href="javascript:;" title="">各組業務</a></li>
+                                            <li><a href="javascript:;" title="">研究所研究架構</a></li>
+                                            <li><a href="javascript:;" title="">2016-2019職業安全</a></li>
+                                            <li><a href="javascript:;" title="">衛生研究策略規劃</a></li>
+                                            <li><a href="javascript:;" title="">交通資訊</a></li>
+                                            <li><a href="javascript:;" title="">大事紀</a></li>
+                                            <li><a href="javascript:;" title="">研發替代役相關資訊</a></li>
+                                            <li><a href="javascript:;" title="">重大政策</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;" title="">熱線消息</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">新聞稿</a></li>
+                                            <li><a href="javascript:;" title="">法規新訊</a></li>
+                                            <li><a href="javascript:;" title="">工安警訊</a></li>
+                                            <li><a href="javascript:;" title="">研究新訊</a></li>
+                                            <li><a href="javascript:;" title="">研討會消息</a></li>
+                                            <li><a href="javascript:;" title="">科研採購</a></li>
+                                            <li><a href="javascript:;" title="">其他公告</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;" title="">研究成果</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">第二層項目1</a></li>
+                                            <li><a href="javascript:;" title="">各年度研究報</a></li>
+                                            <li><a href="javascript:;" title="">勞動及職業安全衛生簡訊</a></li>
+                                            <li><a href="javascript:;" title="">勞動及職業安全衛生研究季刊</a></li>
+                                            <li><a href="javascript:;" title="">勞動及職業安全衛生技術叢</a></li>
+                                            <li><a href="javascript:;" title="">勞動及職業安全衛生研究年報</a></li>
+                                            <li><a href="javascript:;" title="">其他出版品</a></li>
+                                            <li><a href="javascript:;" title="">出版品授權利用聲明</a></li>
+                                            <li><a href="javascript:;" title="">政府網站資料開放宣告</a></li>
+                                            <li><a href="javascript:;" title="">常見問題答客問FAQ</a></li>
+                                            <li><a href="javascript:;" title="">重要績效輯</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;" title="">勞動主題館</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">安全衛生法規資料庫</a></li>
+                                            <li><a href="javascript:;" title="">勞動相關法規資料庫</a></li>
+                                            <li><a href="javascript:;" title="">營造業重大職災知識網</a></li>
+                                            <li><a href="javascript:;" title="">勞工心理健康專區</a></li>
+                                            <li><a href="javascript:;" title="">防護具專區</a></li>
+                                            <li><a href="javascript:;" title="">職場健康促進網</a></li>
+                                            <li><a href="javascript:;" title="">研究報告資料庫</a></li>
+                                            <li><a href="javascript:;" title="">分析方法資料庫</a></li>
+                                            <li><a href="javascript:;" title="">物質安全資料表</a></li>
+                                            <li><a href="javascript:;" title="">歷史資料庫</a></li>
+                                            <li><a href="javascript:;" title="">安全資料表資料庫</a></li>
+                                            <li><a href="javascript:;" title="">奈米物質安全衛生管理主題區</a></li>
+                                            <li><a href="javascript:;" title="">Smartpeople智客</a></li>
+                                            <li><a href="javascript:;" title="">關鍵性勞動市場指標</a></li>
+                                            <li><a href="javascript:;" title="">安全專有名詞辭典</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;" title="">政府公開資訊</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">研究報告</a></li>
+                                            <li><a href="javascript:;" title="">施政計畫</a></li>
+                                            <li><a href="javascript:;" title="">預算及決算書</a></li>
+                                            <li><a href="javascript:;" title="">行政指導有關文書</a></li>
+                                            <li><a href="javascript:;" title="">請願結果與訴願之決定</a></li>
+                                            <li><a href="javascript:;" title="">書面之公共工程及採購契約</a></li>
+                                            <li><a href="javascript:;" title="">支付之補助</a></li>
+                                            <li><a href="javascript:;" title="">出國報告</a></li>
+                                            <li><a href="javascript:;" title="">政府機關業務宣導</a></li>
+                                            <li><a href="javascript:;" title="">其他</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;" title="">便民服務</a>
+                                        <ul>
+                                            <li><a href="javascript:;" title="">心理量表測驗系統平台</a></li>
+                                            <li><a href="javascript:;" title="">廉政行動站</a></li>
+                                            <li><a href="javascript:;" title="">會議室租借</a></li>
+                                            <li><a href="javascript:;" title="">資料索取</a></li>
+                                            <li><a href="javascript:;" title="">展示館參訪申請</a></li>
+                                            <li><a href="javascript:;" title="">針扎防護通報系統</a></li>
+                                            <li><a href="javascript:;" title="">其他業務</a></li>
+                                            <li><a href="javascript:;" title="">勞工教育資源</a></li>
+                                            <li><a href="javascript:;" title="">基本資料檔案下載</a></li>
+                                            <li><a href="javascript:;" title="">性平專區</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--FatFooter -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第七組 fatfoot end-->
+    </section>
+    <!--MainContent end -->
+    <!--Footer start -->
+    <footer id="Footer">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                    <!--  copyright start-->
+                    <div class="copyright">
+                        <ul>
+                            <li><a href="javascript:;">著作權聲明</a></li>
+                            <li><a href="javascript:;">網路隱私權政策</a></li>
+                            <li><a href="javascript:;">網路安全政策宣告</a></li>
+                            <li><a href="javascript:;">交通資訊導引</a></li>
+                            <li><a href="javascript:;">辦公時間勞動部勞動及職業</a></li>
+                        </ul>
+                    </div>
+                    <!--  copyright end-->
+                    <div class="footer_content">
+                        <!--左 start -->
+                        <div class="footer_blockleft">
+                            <!--  <div  class="fbbanner"><img src="images/fb.jpg" alt=""></div> -->
+                            <!--分享/瀏覽資料 start -->
+                            <div class="sharedata">
+                                <!--  <ul>
+              <li class="fb"><a href="javascript:;"><img src="images/space.gif" alt="facebook"></a></li>
+              <li class="plurk"><a href="javascript:;"><img src="images/space.gif" alt="plurk"></a></li>
+              <li class="twitter"><a href="javascript:;"><img src="images/space.gif" alt="twitter"></a></li>
+              <li class="youtube"><a href="javascript:;"><img src="images/space.gif" alt="twitter"></a></li>
+              <li class="rss"><a href="javascript:;"><img src="images/space.gif" alt="rss"></a></li>
+            </ul> -->
+                                <p>瀏覽人次 /<span>5198565</span></p>
+                                <p>更新日期 /<span>2016-02-16</span></p>
+                            </div>
+                            <!--分享/瀏覽資料  end -->
+                        </div>
+                        <!--左 end -->
+                        <!--右 start -->
+                        <div class="footer_blockright">
+                            <div class="explanation">
+                                <p><span>勞動部勞動及職業安全衛生研究所版權所有</span>
+                                    <br><span>本所服務專線：(02)2660-7600 傳真號碼：(02)2660-7732</span>
+                                    <br><span>本所地址：22143新北市汐止區橫科路407巷99號[<a href="#">Google Map</a>]</span>
+                                    <br><span>最佳瀏覽環境：IE 8.0以上版本．本網站最佳瀏覽解析度為 1024*768</span></p>
+                            </div>
+                            <div class="Mark">
+                                <ul>
+                                    <li class="Qr"><a href="javascript:;" target="_blank" title="Qrcode"><img src="images/QRcode.gif" alt="QRcode"></a></li>
+                                    <li><a href="javascript:;"><img src="images/accessibility_aa.jpg" " alt=""></a></li>
+                                    <li class=" egov"><a href="javascript:;"><img src="images/egov.png" alt=""></a></li>
+                                    <li><a href="javascript:;" target="_blank"><img src="images/line_at.png" style="width:60px" alt="line" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--右 end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end -->
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+    <!-- slick  -->
+    <script src="assets/module/slick/slick.js"></script>
+    <!-- slick 自訂 -->
+    <script src="js/slick-addscripts.js"></script>
+    <!-- Sidebar選單 -->
+    <script src="assets/js/bootstrap.offcanvas.js"></script>
+    <!-- fullcalendar -->
+    <script src="assets/module/fullcalendar-2.3.1/lib/moment.min.js"></script>
+    <script src="assets/module/fullcalendar-2.3.1/fullcalendar.min.js"></script>
+    <!-- scrollUp-->
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <!-- jq-easing -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <!-- 全部自訂檔 -->
+    <script src="js/customize_scripts.js"></script>
+    <!--top menu -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- fatfooter js-->
+    <!-- Bootstrap JavaScript -->
+    <script src="js/BS3JS.min.js"></script>
+</body>
+
+</html>
