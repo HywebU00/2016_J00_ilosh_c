@@ -2166,7 +2166,7 @@ button:focus {
         display: none
     }
 }
-.Block_incontent .inmenu h2 {
+.Block_incontent .inmenu .title {
     font-size: 1.375em;
     background-color: #167b9a;
     color: #fff;
@@ -3273,6 +3273,7 @@ button:focus {
     padding: 0;
     line-height: 150%;
     color: #333;
+    border: none;
 }
 .cp .pubInfo ul li em {
     font-style: normal;
@@ -3377,7 +3378,7 @@ button:focus {
     text-decoration: underline;
 }
 /*-------------------------------------*/
-.attachment h2, .seeAlso h2 {
+.attachment h3, .seeAlso h3 {
     font-size: 1.188em;
     margin: 0 0 .9em;
     padding: 8px;
