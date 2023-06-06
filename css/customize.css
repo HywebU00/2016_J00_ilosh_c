@@ -5147,7 +5147,7 @@ button:focus {
     text-decoration: none
 }
 /* 跑馬燈 */
-.marquee_block {
+/* .marquee_block {
     background-color: #eeeeee;
     font-size: 1.125em;
 }
@@ -5232,4 +5232,89 @@ button:focus {
     position: absolute;
     right: -13px;
     top: 9px;
+} */
+/* 跑馬燈2 */
+.marquee_block {
+    position: relative;
+    background-color: #fff9bf;
+}
+.marquee_block .container {
+    padding-left: 100px;
+    position: relative;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+@media (max-width: 767px) {
+    .marquee_block .container {
+        padding-left: 120px;
+    }
+}
+.marquee_block .container .announcement {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    background-color: #c94c00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.938em;
+    display: inline-block;
+}
+@media (max-width: 767px) {
+    .marquee_block .container .announcement {
+        left: 15px;
+    }
+}
+.marquee_block .container .announcement:after {
+    content: '';
+    border: 7px solid #c94c00;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: -13px;
+    top: 11px;
+}
+.marquee_block .container .marquee {
+    overflow: hidden;
+    padding: 20px 0;
+}
+.marquee_block .container .marquee .marqueeOuter {
+    display: flex;
+}
+.marquee_block .container .marquee .marqueeBox {
+    padding: 0 0 1px;
+    display: flex;
+}
+.marqueeItem {
+    margin: 0 80px 0 0;
+    white-space: nowrap;
+    font-size: 1.125em;
+}
+.marqueeItem a {
+    color: #1579a9;
+    font-weight: bolder;
+}
+.marqueeItem a:hover {
+    color: #eb0202;
+}
+.marqueeItem a span {
+    background-color: #c94c00;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 1em;
+    border-radius: 5px;
+    font-size: 0.938em;
+    display: inline-block;
+    position: relative;
+}
+.marqueeItem a span::after {
+    content: '';
+    border: 7px solid $color-orange;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: -13px;
+    top: 11px;
 }
