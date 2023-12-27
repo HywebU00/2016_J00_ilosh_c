@@ -36,27 +36,43 @@
     <link rel="alternate stylesheet" type="text/css" href="css/fontL.css" title="large" data-cat="font" />
     <styleSwitcher cat="font" />
     <script type="text/javascript" src="js/styleswitcher.js"></script><!-- 切換大、中、小字形-->
-    <style> @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-/*
+    <style>
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+
+            /*
     Label the data
     */
-.listTb td:nth-of-type(1):before { content: "標題:"; }
-.listTb td:nth-of-type(2):before { content: "分類:"; }
-.listTb td:nth-of-type(3):before { content: "單位:"; }
-.listTb td:nth-of-type(4):before { content: "日期:"; }
-}
-</style>
+            .listTb td:nth-of-type(1):before {
+                content: "標題:";
+            }
+
+            .listTb td:nth-of-type(2):before {
+                content: "分類:";
+            }
+
+            .listTb td:nth-of-type(3):before {
+                content: "單位:";
+            }
+
+            .listTb td:nth-of-type(4):before {
+                content: "日期:";
+            }
+        }
+    </style>
 </head>
 
-<body>
+<body><a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
     <header id="Header">
         <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
         <nav class="navbar navbar-default megamenu" role="navigation">
             <div class="container Topheader">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"> <span class="sr-only">Toggle navigation</span><i class="icon-menu"></i> </button>
+                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"> <span class="sr-only">Toggle navigation</span><i class="icon-menu"></i>
+                    </button>
                     <h1 class="Logo"><a href="index.html"><img src="images/logo.png" alt="勞動部勞動及職業安全衛生研究所"></a></h1>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right"> <span class="sr-only">Toggle navigation</span><i class="icon-search"></i> </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right"> <span class="sr-only">Toggle navigation</span><i class="icon-search"></i>
+                    </button>
                 </div>
                 <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
                     <div class="pull-sm-right pull-md-right pull-lg-right">
@@ -76,15 +92,19 @@
                             <div class="fontSet"><span>字級：</span>
                                 <div id="fontSwitcherLayer">
                                     <ul>
-                                        <li class="fontS"><a id="small" data-cat="font" href="css/fontS.css" class="sw-here" onclick="setActiveStyleSheet('small', 'font'); return false;" onkeypress="setActiveStyleSheet('small', 'font'); return false;">小</a></li>
-                                        <li class="fontM"><a id="medium" data-cat="font" href="css/fontM.css" onclick="setActiveStyleSheet('medium', 'font'); return false;" onkeypress="setActiveStyleSheet('medium', 'font'); return false;">中</a></li>
-                                        <li class="fontL"><a id="large" data-cat="font" href="css/fontL.css" onclick="setActiveStyleSheet('large', 'font'); return false;" onkeypress="setActiveStyleSheet('large', 'font'); return false;">大</a></li>
+                                        <li class="fontS"><a id="small" data-cat="font" href="css/fontS.css" class="sw-here" onclick="setActiveStyleSheet('small', 'font'); return false;"
+                                                onkeypress="setActiveStyleSheet('small', 'font'); return false;">小</a></li>
+                                        <li class="fontM"><a id="medium" data-cat="font" href="css/fontM.css" onclick="setActiveStyleSheet('medium', 'font'); return false;"
+                                                onkeypress="setActiveStyleSheet('medium', 'font'); return false;">中</a></li>
+                                        <li class="fontL"><a id="large" data-cat="font" href="css/fontL.css" onclick="setActiveStyleSheet('large', 'font'); return false;"
+                                                onkeypress="setActiveStyleSheet('large', 'font'); return false;">大</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <!-- -->
                             <!-- -->
-                            <noscript> 當SCRIPT關閉時，選擇字型大小，請參考：IE6請利用鍵盤按住ALT鍵 + V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小,而IE7或Firefox瀏覽器則可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。當SCRIPT關閉時，選擇顏色：無法選擇背景色項目，但不影響資訊文字瀏覽 </noscript>
+                            <noscript> 當SCRIPT關閉時，選擇字型大小，請參考：IE6請利用鍵盤按住ALT鍵 + V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小,而IE7或Firefox瀏覽器則可利用鍵盤 Ctrl + (+)放大
+                                (-)縮小來改變字型大小。當SCRIPT關閉時，選擇顏色：無法選擇背景色項目，但不影響資訊文字瀏覽 </noscript>
                         </div>
                         <!--custom End-->
                         <!--字級設定 end -->
@@ -233,6 +253,7 @@
                                 </ul>
                             </nav>
                             <!--分類 end -->
+                            <div class="condition"><a href="#">隱藏條件查詢</a></div>
                             <!--page start -->
                             <section class="page"><span class="hidden-xs"> 共<em>308</em>筆資料，第<em>1/18</em>頁， 每頁顯示 <select name="PageSize" id="PageSize" onChange="OnPageSizeChange(this)">
                                         <option value="10" selected>10</option>
@@ -256,7 +277,7 @@
                                 </ul>
                             </section>
                             <!--page  end -->
-                            <div class="condition"><a href="#">條件查詢</a></div>
+
                             <!--listbutton start -->
                             <div class="listbutton">
                                 <ul>
@@ -271,7 +292,7 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th scope="col" align="left" style="text-align:left">標題</th>
+                                            <th scope="col" style="text-align:left">標題</th>
                                             <th width="10%" scope="col">分類</th>
                                             <th width="13%" scope="col">單位</th>
                                             <th width="15%" scope="col">日期</th>
@@ -365,7 +386,7 @@
                                 </ul>
                             </section>
                             <!--page  end -->
-                            
+
                             <div class="quickLink">
                                 <ul>
                                     <li><a href="javascript:history.back();" class="back">回上一頁</a>
@@ -401,7 +422,8 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="javascript:;" title="">歷史沿革 <li><a href="javascript:;" title="">組織架構與聯絡資訊</li>
+                                                <a href="javascript:;" title="">歷史沿革
+                                            <li><a href="javascript:;" title="">組織架構與聯絡資訊</li>
                                             </a>
                                             <li><a href="javascript:;" title="">各組業務</a></li>
                                             <li><a href="javascript:;" title="">研究所研究架構</a></li>
@@ -495,10 +517,10 @@
             </div>
         </div>
         <!--第七組 fatfoot end-->
-        
+
     </section>
     <!--MainContent end -->
-      <!--Footer start -->
+    <!--Footer start -->
     <footer id="Footer">
         <div class="container">
             <div class="row clearfix">
@@ -540,7 +562,8 @@
                                 <p><span>勞動部勞動及職業安全衛生研究所版權所有</span>
                                     <br><span>本所服務專線：(02)2660-7600 傳真號碼：(02)2660-7732</span>
                                     <br><span>本所地址：22143新北市汐止區橫科路407巷99號[<a href="#">Google Map</a>]</span>
-                                    <br><span>最佳瀏覽環境：IE 8.0以上版本．本網站最佳瀏覽解析度為 1024*768</span></p>
+                                    <br><span>最佳瀏覽環境：IE 8.0以上版本．本網站最佳瀏覽解析度為 1024*768</span>
+                                </p>
                             </div>
                             <div class="Mark">
                                 <ul>
@@ -558,7 +581,7 @@
         </div>
     </footer>
     <!--Footer end -->
-     <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
