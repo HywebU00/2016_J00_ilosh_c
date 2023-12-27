@@ -2454,6 +2454,18 @@ button:focus {
   font-weight: bold;
   font-family: Verdana, Geneva, sans-serif;
 }
+.page .btn {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #333;
+  padding: 3px 12px;
+  transition: 0.5s;
+}
+.page .btn:hover {
+  border: 1px solid #bbb;
+  background-color: #bbb;
+  color: #333;
+}
 /*---------------------------------------------------- 1 2 3 4 5 */
 .page ul {
   list-style: none;
